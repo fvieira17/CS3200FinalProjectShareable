@@ -1,6 +1,8 @@
-package com.example.springtemplate.models;
+package com.example.springboot.playerdb.model;
 
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name="nation")

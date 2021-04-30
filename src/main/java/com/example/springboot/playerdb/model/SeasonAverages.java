@@ -1,9 +1,15 @@
-package com.example.springtemplate.models;
+package com.example.springboot.playerdb.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class SeasonAverages {
   @Id
-  @GeneratedValue(strategy=GenerationType.IDENTITY)
+  @GeneratedValue(strategy= GenerationType.IDENTITY)
   private Integer statid;
   @OneToOne(mappedBy="seasonaverages")
   private Integer playerid;
@@ -43,3 +49,4 @@ public class SeasonAverages {
     this.apg = apg;
   }
 }
+

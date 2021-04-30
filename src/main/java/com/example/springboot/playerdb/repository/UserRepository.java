@@ -1,12 +1,12 @@
-package com.example.springtemplate.repositories;
+package com.example.springboot.playerdb.repository;
 
-import com.example.springtemplate.models.User;
+import com.example.springboot.playerdb.model.User;
 import java.util.Date;
 import java.util.List;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Integer> {
+  /*
   @Query("SELECT user FROM User user WHERE userD.username=:username")
   User findUserByUsername(@Param("username") String username);
 
@@ -38,4 +38,5 @@ public interface UserRepository extends CrudRepository<User, Integer> {
       + "FROM DUser u\n"
       + "WHERE u.userID = :userID;")
   boolean deleteUser(@Param("userID") Integer userID);
+   */
 }

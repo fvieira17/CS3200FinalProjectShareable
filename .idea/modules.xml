@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FinalProjectJava-Final.iml" filepath="$PROJECT_DIR$/FinalProjectJava-Final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FinalProject-SpringBoot.iml" filepath="$PROJECT_DIR$/FinalProject-SpringBoot.iml" />
     </modules>
   </component>
 </project>

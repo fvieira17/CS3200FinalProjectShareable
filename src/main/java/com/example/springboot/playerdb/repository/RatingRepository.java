@@ -1,11 +1,12 @@
-package com.example.springtemplate.repositories;
+package com.example.springboot.playerdb.repository;
 
-import com.example.springtemplate.models.Rating;
-import java.util.List;
+import com.example.springboot.playerdb.model.Rating;
 import org.springframework.data.repository.CrudRepository;
+
 
 public interface RatingRepository extends CrudRepository<Rating, Integer> {
 
+  /*
   @Query(value = "INSERT INTO Rating (playerID, userID) VALUES (:playerID,:userID)")
   Rating createRating(@Param("playerID") Integer playerID, @Param("userID") Integer userID);
 
@@ -20,4 +21,5 @@ public interface RatingRepository extends CrudRepository<Rating, Integer> {
 
   @Query(value = "DELETE * FROM Rating r * WHERE r.playerID = :playerID")
   Boolean deleteRating(@Param("playerID") Integer playerID);
+   */
 }

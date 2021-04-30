@@ -1,4 +1,4 @@
-package com.example.springtemplate.models;
+package com.example.springboot.playerdb.model;
 
 import java.util.Date;
 import javax.persistence.*;
@@ -18,6 +18,15 @@ public class User {
   @OneToMany(mappedBy="user")
   private List<Rating> ratings;
 
+  public User(String username, String password, String firstName, String lastName, String email, Date dob) {
+    this.username = username;
+    this.password = password;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.dob = dob;
+  }
+
   public Date getDob() {
     return dob;
   }
@@ -32,13 +41,6 @@ public class User {
 
   public void setRatings(List<Rating> ratings) {
     this.ratings = ratings;
-  }
-
-  public int getId() {
-    return id;
-  }
-  public void setId(int id) {
-    this.id = id;
   }
 
   public String getUsername() {

@@ -1,4 +1,4 @@
-package com.example.springtemplate.models;
+package com.example.springboot.playerdb.model;
 
 import java.util.Date;
 import javax.persistence.*;
@@ -9,7 +9,6 @@ public class Player {
   @Id
   @GeneratedValue(strategy= GenerationType.IDENTITY)
   private Integer id;
-  @OneToOne(mappedBy = "player")
   private Integer nationid;
   private String firstName;
   private String lastname;
@@ -17,12 +16,14 @@ public class Player {
   private String school;
   private Team team;
 
-  public Integer getId() {
-    return id;
-  }
-
-  public void setId(Integer id) {
-    this.id = id;
+  public Player(Integer nationid, String firstName,
+      String lastname, Date dob, String school, Team team) {
+    this.nationid = nationid;
+    this.firstName = firstName;
+    this.lastname = lastname;
+    this.dob = dob;
+    this.school = school;
+    this.team = team;
   }
 
   public Integer getNationid() {

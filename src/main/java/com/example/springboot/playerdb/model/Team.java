@@ -1,4 +1,4 @@
-package com.example.springtemplate.models;
+package com.example.springboot.playerdb.model;
 
 public enum Team {
   ATLANTA_HAWKS,
